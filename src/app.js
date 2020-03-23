@@ -6,8 +6,6 @@ const hbs = require("hbs");
 
 const app = express();
 
-console.log("app running");
-
 // Define paths for Express config
 const publicDirPath = path.join(__dirname, "../public");
 const viewsDirPath = path.join(__dirname, "../templates/views");
