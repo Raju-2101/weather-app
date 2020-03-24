@@ -26,11 +26,11 @@ app.get("", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About Page", name: "penis" });
+  res.render("about", { title: "About Page", name: "hi..." });
 });
 
 app.get("/help", (req, res) => {
-  res.render("help", { title: "help Page", name: "penis" });
+  res.render("help", { title: "help Page", name: "hi........" });
 });
 
 app.get("/weather", (req, res) => {

@@ -5,6 +5,8 @@ const weather = document.querySelector(".weather");
 input.focus();
 
 const fetchData = () => {
+  weather.textContent = "Loading..";
+
   const address = input.value;
 
   fetch(`http://localhost:3000/weather/?address=${address}`)
