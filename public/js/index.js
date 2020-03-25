@@ -9,7 +9,7 @@ const fetchData = () => {
 
   const address = input.value;
 
-  fetch(`http://localhost:3000/weather/?address=${address}`)
+  fetch(`/weather/?address=${address}`)
     .then(data => {
       return data.json();
     })
