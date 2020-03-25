@@ -11,7 +11,7 @@ const forcast = (latitude, longitude, location, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${body.currently.temperature} degree and precption is ${body.currently.precipProbability}. So it is ${body.daily.data[0].summary} in ${location}`
+        ` ${location}, ${body.daily.data[0].summary}. It is currently ${body.currently.temperature} degree and precption is ${body.currently.precipProbability}`
       );
     }
   });
